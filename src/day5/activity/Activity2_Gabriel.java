@@ -3,14 +3,16 @@ package day5.activity;
 
 
 public class Activity2_Gabriel {
+    
     public static void main(String[] args) {
+        
         double income = 50000;
         double foodAllowance = 15000;
         double transportation = 2500;
         double rent = 4500;
         double utilityBill = 3500;
 
-        // Calculate percentage
+        // Calculate percentages
         double foodPercent = (foodAllowance / income) * 100;
         double transportationPercent = (transportation / income) * 100;
         double rentPercent = (rent / income) * 100;
