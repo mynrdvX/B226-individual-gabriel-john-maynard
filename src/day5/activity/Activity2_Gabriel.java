@@ -10,7 +10,7 @@ public class Activity2_Gabriel {
         double rent = 4500;
         double utilityBill = 3500;
 
-        // Calculate percentages
+        // Calculate percentage
         double foodPercent = (foodAllowance / income) * 100;
         double transportationPercent = (transportation / income) * 100;
         double rentPercent = (rent / income) * 100;
