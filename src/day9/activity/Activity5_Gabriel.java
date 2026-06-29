@@ -50,12 +50,15 @@ public class Activity5_Gabriel {
 
         int sum3 = 0;
         int current3 = start3;
-        StringBuilder sequence3 = new StringBuilder();
+        String sequence3 = "";
 
         for (int i = 1; i <= n3; i++) {
             sum3 += current3;
-            sequence3.append(current3);
-            if (i < n3) sequence3.append(" + ");
+            if (i < n3) {
+                sequence3 = sequence3 + current3 + " + ";
+            } else {
+                sequence3 = sequence3 + current3;
+            }
             current3 += diff3;
         }
 
@@ -76,17 +79,18 @@ public class Activity5_Gabriel {
         int sum4 = 0;
         long product4 = 1;
         int current4 = start4;
-        StringBuilder sumSeq = new StringBuilder();
-        StringBuilder prodSeq = new StringBuilder();
+        String sumSeq = "";
+        String prodSeq = "";
 
         for (int i = 1; i <= n4; i++) {
             sum4 += current4;
             product4 *= current4;
-            sumSeq.append(current4);
-            prodSeq.append(current4);
             if (i < n4) {
-                sumSeq.append(" + ");
-                prodSeq.append(" * ");
+                sumSeq  = sumSeq  + current4 + " + ";
+                prodSeq = prodSeq + current4 + " * ";
+            } else {
+                sumSeq  = sumSeq  + current4;
+                prodSeq = prodSeq + current4;
             }
             current4 += diff4;
         }
