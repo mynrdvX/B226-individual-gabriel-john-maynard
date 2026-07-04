@@ -14,19 +14,38 @@ public class Activity10_Gabriel {
 //        System.out.println("Math.abs(-25): " + Math.abs(negativeNumber));
 //        System.out.println();
 
+
         // ============================================
         // Math.max()
         // Returns the larger of two values.
         // ============================================
-        System.out.println("Math.max(10, 20): " + Math.max(10, 20));
-        System.out.println();
+        int stud1 = 96;
+        int stud2 = 92;
+
+        // Math.max()
+        int highScore1 = Math.max(stud1, stud2);
+        System.out.println("High Score (Math.max): " + highScore1);
+
+        // if-else / other approach if not using Math Class 
+        int highScore2;
+
+        if (stud1 > stud2) {
+            highScore2 = stud1;
+        } else {
+            highScore2 = stud2;
+        }
+
+        System.out.println("High Score (if-else): " + highScore2);
+        
 
         // ============================================
         // Math.min()
         // Returns the smaller of two values.
         // ============================================
-        System.out.println("Math.min(10, 20): " + Math.min(10, 20));
-        System.out.println();
+//        System.out.println("Math.min(10, 20): " + Math.min(10, 20));
+//        System.out.println();
+        
+        
 
         // ============================================
         // Math.pow()
